@@ -10,3 +10,14 @@ SELECT * FROM (
   SELECT * FROM riders2
 )
 WHERE total_trips < 500;
+
+/*
+= is the equivalent of IS
+when comparing strings
+*/
+SELECT COUNT(*) FROM cars
+WHERE status = 'active';
+--and
+SELECT COUNT(*) FROM cars
+WHERE status IS 'active';
+--return the same result!
